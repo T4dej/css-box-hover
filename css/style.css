@@ -4,20 +4,39 @@ body{
   font-family: sans-serif;
 }
 
-.container{
+/*.container{
   position: relative;
   width: 1500px;
   height: 500px;
   margin: 240px auto;
+}*/
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.container .box{
+/*.container .box{
   position: relative;
   width: calc(500px - 30px);
   height: calc(400px - 30px);
   background: #0ff;
   float: left;
   margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}*/
+
+.container .box{
+  position: relative;
+  width: 32%;
+  min-width: 500px;
+  height: 400px;
+  float: left;
+  margin: 5px;
+  margin-top: 40px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 10px;
